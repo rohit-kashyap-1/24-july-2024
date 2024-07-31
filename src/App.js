@@ -1,22 +1,33 @@
 import logo from './logo.svg';
 import './App.css';
 
-//import Home from './components/Home';
-import Li from './components/Li';
-
+import Card from './components/Card';
 
 
 //functional component
 function App() {
   return (
-   <>
-   <ul>
-    <Li title="Item 1" content="content 1" />
-    <Li title="Item 2"  content="content 2"/>
-    <Li title="Item 3" content="content 3" />
-   </ul>
-   </>
+   <div className='container py-4'>
+    <div className='row'>
+      <div className='col-md-3'>
+        <Card title="Web Designing service" content="web designing" price={1000} />
+      </div>
+      
+      <div className='col-md-3'>
+        <Card title="Web Development" content="web development" />
+      </div>
+      <div className='col-md-3'>
+        <Card title="digital Marketing" content="DM" />
+      </div>
+      <div className='col-md-3'>
+        <Card title="Graphics Designing" content="Graphics" />
+      </div>
+
+    </div>
+   </div>
   );
 }
 
 export default App;
+
+
